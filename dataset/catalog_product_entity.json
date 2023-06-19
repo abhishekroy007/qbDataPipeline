@@ -1,0 +1,58 @@
+{
+	"name": "catalog_product_entity",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sqltables",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "entity_id",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "attribute_set_id",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "type_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SKU",
+				"type": "nvarchar"
+			},
+			{
+				"name": "has_option",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "required_option",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "created_at",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "updated_at",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "catalog_product_entity"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

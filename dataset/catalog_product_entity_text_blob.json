@@ -1,0 +1,24 @@
+{
+	"name": "catalog_product_entity_text_blob",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "catalog_product_entity_1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "catalog_product_entity_text",
+				"container": "qbblob"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

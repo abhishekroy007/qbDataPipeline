@@ -1,0 +1,42 @@
+{
+	"name": "catalog_product_entity_varchar",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sqltables",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "value_id",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "attribute_id",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "store_id",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "entity_id",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "value",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "catalog_product_entity_varchar"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

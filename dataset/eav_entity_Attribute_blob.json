@@ -1,0 +1,24 @@
+{
+	"name": "eav_entity_Attribute_blob",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "catalog_product_entity_1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "eav_entity_attribute",
+				"container": "qbblob"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

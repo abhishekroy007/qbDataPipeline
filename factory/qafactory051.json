@@ -1,0 +1,9 @@
+{
+	"name": "qafactory051",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "852abe10-4882-4f96-8d63-b95e52557490",
+		"tenantId": "fa6ad09b-e7db-4c06-bd38-0b989882582f"
+	}
+}

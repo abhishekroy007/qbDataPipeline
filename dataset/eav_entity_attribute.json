@@ -1,0 +1,91 @@
+{
+	"name": "eav_entity_attribute",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sqltables",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "attribute_id",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "entity_type_id",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "attribute_code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "attribute_model",
+				"type": "nvarchar"
+			},
+			{
+				"name": "backend_model",
+				"type": "nvarchar"
+			},
+			{
+				"name": "backend_type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "backend_table",
+				"type": "nvarchar"
+			},
+			{
+				"name": "frontend_model",
+				"type": "nvarchar"
+			},
+			{
+				"name": "frontend_input",
+				"type": "nvarchar"
+			},
+			{
+				"name": "frontend_label",
+				"type": "nvarchar"
+			},
+			{
+				"name": "frontend_class",
+				"type": "nvarchar"
+			},
+			{
+				"name": "source_model",
+				"type": "nvarchar"
+			},
+			{
+				"name": "is_required",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "is_user_defined",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "default_value",
+				"type": "nvarchar"
+			},
+			{
+				"name": "is_unique",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "note",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "eav_entity_attribute"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

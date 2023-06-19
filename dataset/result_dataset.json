@@ -1,0 +1,57 @@
+{
+	"name": "result_dataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "catalog_product_entity_1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "result_data",
+				"container": "qbblob"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "SKU",
+				"type": "String"
+			},
+			{
+				"name": "exam_name",
+				"type": "String"
+			},
+			{
+				"name": "proctor_notes",
+				"type": "String"
+			},
+			{
+				"name": "number",
+				"type": "String"
+			},
+			{
+				"name": "password",
+				"type": "String"
+			},
+			{
+				"name": "time_limit",
+				"type": "String"
+			},
+			{
+				"name": "special_instruction",
+				"type": "String"
+			},
+			{
+				"name": "title",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

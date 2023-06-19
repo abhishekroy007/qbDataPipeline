@@ -1,0 +1,20 @@
+{
+	"name": "Binary1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "catalog_product_entity",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "_committed",
+				"folderPath": "result_data",
+				"container": "qbblob"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
